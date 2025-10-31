@@ -1,0 +1,48 @@
+/* Mobile-first cute theme */
+:root{
+  --bg:#fff8f3;
+  --card:#ffffff;
+  --ink:#2f3a56;
+  --accent:#ff7f50;
+  --muted:#6b7280;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "DejaVu Sans", sans-serif;}
+header{padding:18px 16px 8px;text-align:center}
+header h1{margin:0;font-size:1.5rem;color:var(--accent)}
+header p{margin:4px 0 0;color:var(--muted)}
+
+nav{display:flex;gap:8px;padding:8px;position:sticky;top:0;background:var(--bg);z-index:10}
+nav .tab-btn{flex:1;padding:10px;border:1px solid #ffd3c4;background:#fff;border-radius:10px;font-weight:600;color:#c0491e}
+nav .tab-btn.active{background:var(--accent);color:white;border-color:var(--accent)}
+
+main{padding:12px}
+.tab{display:none}
+.tab.active{display:block}
+
+.cards{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.cards li{background:var(--card);padding:12px;border-radius:14px;box-shadow:0 2px 8px rgba(0,0,0,.06);border:1px solid #ffe1d6}
+.cards h3{margin:.2rem 0 .4rem;font-size:1.05rem;color:#c0491e}
+.cards p{margin:0 0 .5rem;color:var(--ink)}
+.done-btn{padding:8px 10px;border-radius:10px;background:#e9fbef;color:#136b2f;border:1px solid #b6ecc8;font-weight:600}
+.done-btn.done{background:#d1fae5;color:#065f46;border-color:#a7f3d0}
+
+.checklist{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.checklist li{background:var(--card);padding:10px;border-radius:12px;border:1px solid #e7e7e7}
+#resetList{margin-top:10px;padding:10px;border-radius:10px;background:#ffe6dc;border:1px solid #ffd3c4;color:#9a3c1a;font-weight:600}
+
+.clues{padding-left:20px}
+.clues li{margin:.4rem 0}
+
+.pdf-link{display:inline-block;margin:.4rem 0;padding:10px 12px;border-radius:10px;background:var(--accent);color:white;text-decoration:none}
+.note{color:var(--muted);font-size:.9rem}
+
+footer{position:sticky;bottom:0;background:var(--bg);padding:10px;text-align:center}
+#themeToggle{padding:10px 12px;border-radius:12px;border:1px solid #ddd;background:#fff}
+
+body.dark{--bg:#0f172a;--card:#0b1223;--ink:#e5e7eb;--muted:#a3a3a3}
+body.dark header p{color:var(--muted)}
+body.dark nav .tab-btn{border-color:#2b3246;background:#121a2e;color:#cbd5e1}
+body.dark nav .tab-btn.active{background:#334155;border-color:#334155}
+body.dark .cards li{border-color:#1f2937;box-shadow:none}
+body.dark #resetList{background:#1f2937;color:#e5e7eb;border-color:#334155}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <title>Halloween Adelina</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="theme-color" content="#FF7F50">
+</head>
+<body>
+  <header>
+    <h1>🎃 Ziua de Halloween a Adelinei</h1>
+    <p>Magie, zâmbete și joacă acasă</p>
+  </header>
+
+  <nav>
+    <button class="tab-btn active" data-tab="program">Program</button>
+    <button class="tab-btn" data-tab="lista">Listă</button>
+    <button class="tab-btn" data-tab="comori">Comori</button>
+    <button class="tab-btn" data-tab="extra">Extra</button>
+  </nav>
+
+  <main>
+    <section id="program" class="tab active">
+      <h2>🕒 Programul zilei</h2>
+      <ul class="cards">
+        <li>
+          <h3>9:00 🍳 Mic dejun vrăjitoresc</h3>
+          <p>Clătite/pâine în formă de dovleac + „Suc de Monstru”.</p>
+          <button class="done-btn">Marchează realizat</button>
+        </li>
+        <li>
+          <h3>10:30 🎨 Atelierul Vrăjitoarei Mici</h3>
+          <p>Fantome, lilieci și dovlecei din hârtie.</p>
+          <button class="done-btn">Marchează realizat</button>
+        </li>
+        <li>
+          <h3>12:00 🏰 Aventură prin Casa Bântuită</h3>
+          <p>Traseu cu perne + misiunea „Pisicuța de Bomboane”.</p>
+          <button class="done-btn">Marchează realizat</button>
+        </li>
+        <li>
+          <h3>14:30 🍪 Atelier de biscuiți</h3>
+          <p>Decorați biscuiți cu glazură și bombonele.</p>
+          <button class="done-btn">Marchează realizat</button>
+        </li>
+        <li>
+          <h3>17:00 👗🔮 Paradă & dans</h3>
+          <p>Costume, poze, muzică de Halloween.</p>
+          <button class="done-btn">Marchează realizat</button>
+        </li>
+        <li>
+          <h3>19:30 🌙🔦 Vânătoare de comori luminoase</h3>
+          <p>Lanternă/glow și bilețele cu mesaje vesele.</p>
+          <button class="done-btn">Marchează realizat</button>
+        </li>
+      </ul>
+    </section>
+
+    <section id="lista" class="tab">
+      <h2>🛒 Listă de pregătire</h2>
+      <ul id="checklist" class="checklist">
+        <li><label><input type="checkbox"> Clătite / pâine / gem portocaliu</label></li>
+        <li><label><input type="checkbox"> Suc (mere / portocale)</label></li>
+        <li><label><input type="checkbox"> Farfurii de hârtie / lipici / carioci</label></li>
+        <li><label><input type="checkbox"> Pălărie de vrăjitoare / costume</label></li>
+        <li><label><input type="checkbox"> Biscuiți / glazură / bombonele</label></li>
+        <li><label><input type="checkbox"> Lanternă / bețișoare fosforescente</label></li>
+        <li><label><input type="checkbox"> Cutiuță pentru comori / surprize</label></li>
+      </ul>
+      <button id="resetList">Resetează lista</button>
+    </section>
+
+    <section id="comori" class="tab">
+      <h2>🔦 Vânătoarea de comori</h2>
+      <ol class="clues">
+        <li>„Ceva rece și misterios te așteaptă în... frigider.”</li>
+        <li>„Unde monștrii își spală colții? (baie)”</li>
+        <li>„Sub perna dovlecelului adormi...”</li>
+        <li>„Lângă pantofii fantomei cuminți.”</li>
+        <li>„Pe raftul unde dorm poveștile.”</li>
+        <li>„În locul în care se ascund șosetele rătăcite.”</li>
+      </ol>
+      <button id="shuffleClues">Amestecă indiciile</button>
+    </section>
+
+    <section id="extra" class="tab">
+      <h2>📄 Extra</h2>
+      <p>Descarcă ghidul complet în format PDF:</p>
+      <p><a class="pdf-link" href="./Ziua_de_Halloween_a_Adelinei_COMPLET.pdf">Deschide PDF-ul complet</a></p>
+      <p class="note">Poți salva această aplicație pe ecranul telefonului (Add to Home Screen). Pentru instalare ca PWA e nevoie să o publici pe un site HTTPS.</p>
+    </section>
+  </main>
+
+  <footer>
+    <button id="themeToggle">🌗 Mod întunecat</button>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
